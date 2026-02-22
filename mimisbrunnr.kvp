@@ -5,7 +5,7 @@ Meta.AarchSupport=NoSupport
 Meta.Arch=x86_64
 Meta.Author=Provant
 Meta.URL=
-Meta.DisplayImageSource=
+Meta.DisplayImageSource=url:https://avatars.githubusercontent.com/u/11922416?v=4
 Meta.EndpointURIFormat={ip}:{GenericModule.App.Ports.$HTTPPort}
 Meta.ConfigManifest=mimisbrunnrconfig.json
 Meta.MetaConfigManifest=mimisbrunnrmetaconfig.json
