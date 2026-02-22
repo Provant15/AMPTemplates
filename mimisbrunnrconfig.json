@@ -1,7 +1,7 @@
 [
     {
         "DisplayName": "Server Host",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Server:dns:1",
         "Description": "IP address the server listens on. Use 0.0.0.0 to listen on all interfaces.",
         "Keywords": "host,bind,listen,address,ip",
@@ -16,7 +16,7 @@
     },
     {
         "DisplayName": "Base URL",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Server:dns:1",
         "Description": "Public-facing URL used for redirect links and email callbacks. Include protocol and port.",
         "Keywords": "url,base,public,external,domain",
@@ -31,7 +31,7 @@
     },
     {
         "DisplayName": "Max Projects",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Server:dns:1",
         "Description": "Maximum number of projects that can be created on this instance.",
         "Keywords": "projects,limit,max,tenant",
@@ -46,7 +46,7 @@
     },
     {
         "DisplayName": "Database Host",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Database:database:2",
         "Description": "PostgreSQL server hostname or IP address.",
         "Keywords": "database,host,postgres,pg,db",
@@ -61,7 +61,7 @@
     },
     {
         "DisplayName": "Database Port",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Database:database:2",
         "Description": "PostgreSQL server port.",
         "Keywords": "database,port,postgres,pg,db",
@@ -76,7 +76,7 @@
     },
     {
         "DisplayName": "Database User",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Database:database:2",
         "Description": "PostgreSQL superuser or role with CREATE DATABASE privileges.",
         "Keywords": "database,user,username,postgres,pg,db",
@@ -91,7 +91,7 @@
     },
     {
         "DisplayName": "Database Password",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Database:database:2",
         "Description": "Password for the PostgreSQL user.",
         "Keywords": "database,password,postgres,pg,db,secret",
@@ -106,7 +106,7 @@
     },
     {
         "DisplayName": "Database Name",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Database:database:2",
         "Description": "Name of the PostgreSQL database.",
         "Keywords": "database,name,postgres,pg,db",
@@ -121,7 +121,7 @@
     },
     {
         "DisplayName": "Database SSL Mode",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Database:database:2",
         "Description": "PostgreSQL SSL connection mode. Use 'disable' for local connections, 'require' or higher for remote.",
         "Keywords": "database,ssl,tls,security,postgres,pg,db",
@@ -141,7 +141,7 @@
     },
     {
         "DisplayName": "Database Max Connections",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Database:database:2",
         "Description": "Max connections per pool. Mimisbrunnr and PostgREST each open a pool of this size. Ensure PostgreSQL max_connections >= 2x this value plus headroom.",
         "Keywords": "database,connections,pool,max,postgres,pg,db",
@@ -156,7 +156,7 @@
     },
     {
         "DisplayName": "Admin Secret",
-        "Category": "Mimisbrunnr Server:server",
+        "Category": "Mimisbrunnr Server:dns",
         "Subcategory": "Platform:key:3",
         "Description": "Secret key for platform admin API access. Auto-generated on first install.",
         "Keywords": "admin,secret,key,platform,api",
