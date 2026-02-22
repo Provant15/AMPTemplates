@@ -171,7 +171,7 @@
     },
     {
         "DisplayName": "Access Token TTL",
-        "Category": "Auth & Email:email",
+        "Category": "Auth and Email:email",
         "Subcategory": "Authentication:key:1",
         "Description": "How long access tokens remain valid. Uses Go duration format (e.g. 1h, 30m, 24h).",
         "Keywords": "auth,token,access,ttl,expiry,duration,jwt",
@@ -186,7 +186,7 @@
     },
     {
         "DisplayName": "Refresh Token TTL",
-        "Category": "Auth & Email:email",
+        "Category": "Auth and Email:email",
         "Subcategory": "Authentication:key:1",
         "Description": "How long refresh tokens remain valid. Uses Go duration format (e.g. 720h = 30 days).",
         "Keywords": "auth,token,refresh,ttl,expiry,duration,jwt",
@@ -201,7 +201,7 @@
     },
     {
         "DisplayName": "SMTP Host",
-        "Category": "Auth & Email:email",
+        "Category": "Auth and Email:email",
         "Subcategory": "SMTP:email:2",
         "Description": "Hostname of the outgoing mail server.",
         "Keywords": "smtp,email,mail,host,server",
@@ -216,7 +216,7 @@
     },
     {
         "DisplayName": "SMTP Port",
-        "Category": "Auth & Email:email",
+        "Category": "Auth and Email:email",
         "Subcategory": "SMTP:email:2",
         "Description": "SMTP server port. Common values: 587 (STARTTLS), 465 (SSL), 25 (unencrypted).",
         "Keywords": "smtp,email,mail,port",
@@ -231,7 +231,7 @@
     },
     {
         "DisplayName": "SMTP User",
-        "Category": "Auth & Email:email",
+        "Category": "Auth and Email:email",
         "Subcategory": "SMTP:email:2",
         "Description": "Username for SMTP authentication.",
         "Keywords": "smtp,email,mail,user,username,login",
@@ -246,7 +246,7 @@
     },
     {
         "DisplayName": "SMTP Password",
-        "Category": "Auth & Email:email",
+        "Category": "Auth and Email:email",
         "Subcategory": "SMTP:email:2",
         "Description": "Password for SMTP authentication.",
         "Keywords": "smtp,email,mail,password,secret",
@@ -261,7 +261,7 @@
     },
     {
         "DisplayName": "SMTP From Address",
-        "Category": "Auth & Email:email",
+        "Category": "Auth and Email:email",
         "Subcategory": "SMTP:email:2",
         "Description": "Email address used as the sender for outgoing messages.",
         "Keywords": "smtp,email,mail,from,sender,address",
@@ -417,7 +417,7 @@
     },
     {
         "DisplayName": "Storage Max File Size",
-        "Category": "Storage & Metrics:build",
+        "Category": "Storage and Metrics:build",
         "Subcategory": "Storage:build:1",
         "Description": "Maximum allowed file upload size. Supports units: B, KB, MB, GB (e.g. 500MB, 1GB).",
         "Keywords": "storage,upload,file,size,max,limit",
@@ -432,7 +432,7 @@
     },
     {
         "DisplayName": "Storage Project Quota",
-        "Category": "Storage & Metrics:build",
+        "Category": "Storage and Metrics:build",
         "Subcategory": "Storage:build:1",
         "Description": "Maximum storage per project. 0 = unlimited.",
         "Keywords": "storage,quota,project,limit,disk,space",
@@ -447,7 +447,7 @@
     },
     {
         "DisplayName": "Metrics Enabled",
-        "Category": "Storage & Metrics:build",
+        "Category": "Storage and Metrics:build",
         "Subcategory": "Metrics:build:2",
         "Description": "Enable Prometheus metrics endpoint at /metrics.",
         "Keywords": "metrics,prometheus,monitoring,enabled,toggle",
@@ -465,7 +465,7 @@
     },
     {
         "DisplayName": "Per-Project Metrics",
-        "Category": "Storage & Metrics:build",
+        "Category": "Storage and Metrics:build",
         "Subcategory": "Metrics:build:2",
         "Description": "Enable per-project metrics. Only recommended for < 100 projects.",
         "Keywords": "metrics,per,project,cardinality,prometheus",
@@ -483,7 +483,7 @@
     },
     {
         "DisplayName": "PostgREST Enabled",
-        "Category": "Sidecars & Extensions:build",
+        "Category": "Sidecars and Extensions:build",
         "Subcategory": "PostgREST:build:1",
         "Description": "Enable the PostgREST sidecar for automatic REST API generation from PostgreSQL schemas.",
         "Keywords": "postgrest,rest,api,sidecar,enabled,toggle",
@@ -501,7 +501,7 @@
     },
     {
         "DisplayName": "PostgREST Max Rows",
-        "Category": "Sidecars & Extensions:build",
+        "Category": "Sidecars and Extensions:build",
         "Subcategory": "PostgREST:build:1",
         "Description": "Maximum number of rows returned per REST API query.",
         "Keywords": "postgrest,rest,api,rows,max,limit,pagination",
@@ -516,7 +516,7 @@
     },
     {
         "DisplayName": "PgDog Pooling Mode",
-        "Category": "Sidecars & Extensions:build",
+        "Category": "Sidecars and Extensions:build",
         "Subcategory": "PgDog Connection Pooler:build:2",
         "Description": "Connection pooling strategy. Tier 1 uses per-project roles; Tier 2 pools through a shared service role.",
         "Keywords": "pgdog,pool,connection,pooler,mode,tier,sidecar",
@@ -534,7 +534,7 @@
     },
     {
         "DisplayName": "PgDog Service Password",
-        "Category": "Sidecars & Extensions:build",
+        "Category": "Sidecars and Extensions:build",
         "Subcategory": "PgDog Connection Pooler:build:2",
         "Description": "Password for the shared _mimisbrunnr_service role. Required for Tier 2 pooling. Auto-generated on first install.",
         "Keywords": "pgdog,service,password,secret,pool,tier2",
@@ -549,7 +549,7 @@
     },
     {
         "DisplayName": "PgDog Pool Size",
-        "Category": "Sidecars & Extensions:build",
+        "Category": "Sidecars and Extensions:build",
         "Subcategory": "PgDog Connection Pooler:build:2",
         "Description": "Number of server connections per pool. Each unique (database, user) pair gets its own pool of this size.",
         "Keywords": "pgdog,pool,size,connections,sidecar",
@@ -564,7 +564,7 @@
     },
     {
         "DisplayName": "PgDog Statement Timeout",
-        "Category": "Sidecars & Extensions:build",
+        "Category": "Sidecars and Extensions:build",
         "Subcategory": "PgDog Connection Pooler:build:2",
         "Description": "Statement timeout in milliseconds",
         "Keywords": "pgdog,timeout,statement,query,milliseconds",
@@ -579,7 +579,7 @@
     },
     {
         "DisplayName": "pgvector Enabled",
-        "Category": "Sidecars & Extensions:build",
+        "Category": "Sidecars and Extensions:build",
         "Subcategory": "Extensions:build:3",
         "Description": "Enable the pgvector extension for vector similarity search and embeddings storage.",
         "Keywords": "pgvector,vector,embeddings,ai,extension,similarity",
@@ -597,7 +597,7 @@
     },
     {
         "DisplayName": "pg_cron Enabled",
-        "Category": "Sidecars & Extensions:build",
+        "Category": "Sidecars and Extensions:build",
         "Subcategory": "Extensions:build:3",
         "Description": "Enable the pg_cron extension for scheduled database jobs.",
         "Keywords": "pgcron,cron,schedule,jobs,extension,timer",
@@ -615,7 +615,7 @@
     },
     {
         "DisplayName": "pg_stat_statements Enabled",
-        "Category": "Sidecars & Extensions:build",
+        "Category": "Sidecars and Extensions:build",
         "Subcategory": "Extensions:build:3",
         "Description": "Enable the pg_stat_statements extension for query performance tracking.",
         "Keywords": "pgstats,statistics,statements,performance,extension,queries",
