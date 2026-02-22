@@ -1,0 +1,18 @@
+[
+    {
+        "UpdateStageName": "Check PostgreSQL Readiness",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"timeout=60; while ((timeout--)); do pg_isready -h {{DBHost}} -p {{DBPort}} -U {{DBUser}} >/dev/null 2>&1 && exit 0 || sleep 1; done; echo 'PostgreSQL not reachable at {{DBHost}}:{{DBPort}}. Is the PostgreSQL AMP instance running?'; exit 1\"",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Check Redis Readiness",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"timeout=30; while ((timeout--)); do redis-cli -h {{RedisHost}} -p {{RedisPort}} -a \\\"{{RedisPassword}}\\\" --no-auth-warning ping 2>/dev/null | grep -q PONG && exit 0 || sleep 1; done; echo 'Redis not reachable at {{RedisHost}}:{{RedisPort}}. Is the Redis AMP instance running?'; exit 1\"",
+        "SkipOnFailure": true
+    }
+]

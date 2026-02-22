@@ -1,0 +1,9 @@
+[
+    {
+        "Protocol": "TCP",
+        "Port": 8443,
+        "Name": "HTTP API",
+        "Description": "Mimisbrunnr API, WebSocket, and Prometheus metrics endpoint",
+        "Ref": "HTTPPort"
+    }
+]
